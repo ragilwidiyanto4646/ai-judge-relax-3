@@ -1,7 +1,16 @@
+"""Write the lakeshore-at-dawn entry for the ai-judge-relax-01 bounty.
+
+The program writes a single slow, sensory text: a still lake before
+sunrise, mist lifting a little at a time, rings spreading across the
+water and fading. The text is fixed in this module, so the output is
+deterministic and byte-identical on every run.
+"""
+
 import os
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
+# The entry text is fixed; it is written out as UTF-8 bytes.
 TEXT = "\n".join([
     "Before sunrise the lake lay grey and still.",
     "A thin mist rested on the water.",
